@@ -1,0 +1,11 @@
+import pygame
+drawing_screen=pygame.display.set_mode([300, 300])
+drawing_screen.fill([173,61,41])
+pygame.draw.arc(drawing_screen, [216, 206, 196], [70,70,160,160], 1.5708, 4.71239, 25)
+pygame.draw.arc(drawing_screen, [81, 131, 182], [70,70,160,160], 4.71239, 1.5708, 25)
+pygame.draw.circle(drawing_screen, [31,31,31], [150,150], 55, draw_top_left=True,draw_bottom_left=True)
+pygame.draw.arc(drawing_screen, [222, 180, 86], [95,95,110,110], 4.71239, 1.5708, 30)
+pygame.draw.circle(drawing_screen,[218, 152,134], [150,150],25,draw_bottom_right=True, draw_top_right=True)
+pygame.display.update()
+pygame.time.delay(10000)
+pygame.display.quit()
